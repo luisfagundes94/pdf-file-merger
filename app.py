@@ -10,5 +10,5 @@ merger = PdfFileMerger()
 for pdf in pdfFiles:
     merger.append(open(pdf, 'rb'))
 
-with open("result.pdf", "wb") as finalPdf:
+with open(location + "\\result.pdf", "wb") as finalPdf:
     merger.write(finalPdf)
